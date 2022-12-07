@@ -38,3 +38,71 @@
 
 
 // }
+
+
+//Declaro las variables iniciales, y creo funciones para ingresaar los valores de los personajes
+let tipoHeroe = ""
+let vidaBase = 0
+let danioBase = 0
+
+let tipoMonstruo = ""
+let vidaMonstruoBase = 0
+let danioMonstruoBase = 0
+
+class IngresoHeroe {
+    constructor(tipoHeroe, vidaBase, danioBase) {
+        this.tipoHeroe = tipoHeroe
+        this.vidaBase = vidaBase
+        this.danioBase = danioBase
+    }
+}
+
+class IngresoMonstruo {
+    constructor(tipoMonstruo, vidaMonstruoBase, danioMonstruoBase) {
+        this.tipoMonstruo = tipoMonstruo
+        this.vidaMonstruoBase = vidaMonstruoBase
+        this.danioMonstruoBase = danioMonstruoBase
+    }
+}
+
+const heroe1 = new IngresoHeroe ( "mago", 225 , 150 )
+const heroe2 = new IngresoHeroe ( "guerrero", 300 , 80 )
+const heroe3 = new IngresoHeroe ( "tanque", 450 , 50 )
+
+
+const monstruo1 = new IngresoMonstruo ( "gobling", 180 , 70 )
+const monstruo2 = new IngresoMonstruo ( "orco", 350 , 130 )
+const monstruo3 = new IngresoMonstruo ( "demonio", 450 , 110 )
+
+let array = []
+
+array.push(heroe1)
+array.push(heroe2)
+array.push(heroe3)
+array.push(monstruo1)
+array.push(monstruo2)
+array.push(monstruo3)
+
+// console.table(array)
+
+// c) Con un bucle, genere 3 encuentros entre los contrincantes. Usando las estadísticas de los personajes, se deberán registrar los movimientos 
+//mediante cada iteración: `El ${heroe} ha atacado al ${monstruo}, por ${x} de daño. El monstruo ha perdido ${x} puntos de vida`. 
+//También en el caso del monstruo: `El ${monstruo} ha atacado al ${heroe}, por ${x} de daño. El heroe ha perdido ${x} puntos de vida`.
+
+// Pido info en prompt
+
+let elegirHeroe = prompt("¿Desea crear un mago, guerrero o tanque?")
+let elegirMonstruo = prompt ("¿Desea crear un gobling, orco o demonio?")
+
+// Bucle para encuentros
+
+for (let i = 0; i <= 2; i++) {
+
+    if (elegirHeroe = "mago"){
+        console.log(vidaBase )
+    }
+}
+
+/* console.log(vidaRestante)
+console.log(`El ${tipoHeroe} ha atacado al ${tipoMonstruo}, por ${vidaRestante} de daño. El monstruo ha perdido ${vidaRestante} puntos de vida`) */
+

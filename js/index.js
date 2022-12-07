@@ -53,9 +53,8 @@ function Login (){
 Login()
 
 // Cambiar contraseña si no tiene caracter numérico 
-////////////////////////////// (no me anduvo, revisar) /////////////////////////////////
 
-/* for ( let i = 0; i < seniaUsuario.length; i++ ) {
+for ( let i = 0; i < seniaUsuario.length; i++ ) {
     if ( seniaUsuario[i].match(/[0123456789]/) ) {
         break   
     }
@@ -69,7 +68,7 @@ Login()
         console.log("Todo OK")
         }
     }
-} */
+}
 
 
 // Valido que la contraseña tenga más de ocho caracteres
