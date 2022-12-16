@@ -40,7 +40,7 @@
 // }
 
 
-//Declaro las variables iniciales, y creo funciones para ingresaar los valores de los personajes
+//Declaro las variables iniciales, y creo funciones para ingresar los valores de los personajes
 let tipoHeroe = ""
 let vidaBase = 0
 let danioBase = 0
@@ -51,27 +51,41 @@ let danioMonstruoBase = 0
 
 let vidaRestante = 0
 
-const heroe1 = ( "mago", 225 , 150 )
-const heroe2 = ( "guerrero", 300 , 80 )
-const heroe3 = ( "tanque", 450 , 50 )
-
-
-const monstruo1 = ( "gobling", 180 , 70 )
-const monstruo2 = ( "orco", 350 , 130 )
-const monstruo3 = ( "demonio", 450 , 110 )
-
-class Personajes {
-    constructor(tipoHeroe, vidaBase, danioBase, tipoMonstruo, vidaMonstruoBase, danioMonstruoBase) {
+// Clases para ingreso de datos
+class IngresoHeroe {
+    constructor(tipoHeroe, vidaBase, danioBase) {
         this.tipoHeroe = tipoHeroe
         this.vidaBase = vidaBase
         this.danioBase = danioBase
+    }
+}
+
+class IngresoMonstruo {
+    constructor(tipoMonstruo, vidaMonstruoBase, danioMonstruoBase) {
         this.tipoMonstruo = tipoMonstruo
         this.vidaMonstruoBase = vidaMonstruoBase
         this.danioMonstruoBase = danioMonstruoBase
     }
-Batalla(vidaRestante){
-        return vidaRestante = this.danioBase - this.vidaMonstruoBase
-    }
 }
 
-console.log (heroe1)
+// Valores para usar
+const heroe1 = new IngresoHeroe ( "mago", 225 , 150 )
+const heroe2 = new IngresoHeroe ( "guerrero", 300 , 80 )
+const heroe3 = new IngresoHeroe ( "tanque", 450 , 50 )
+
+const monstruo1 = new IngresoMonstruo ( "gobling", 180 , 70 )
+const monstruo2 = new IngresoMonstruo( "orco", 350 , 130 )
+const monstruo3 = new IngresoMonstruo( "demonio", 450 , 110 )
+
+
+// Bucle de batalla
+    for (let i = 0; i <= 2; i++) {
+
+        let elegirHeroe = prompt("¿Desea crear un mago, guerrero o tanque?")
+        let elegirMonstruo = prompt ("¿Desea crear un gobling, orco o demonio?")
+
+    if (elegirHeroe === "mago", "guerrero", "tanque" && elegirMonstruo === "gobling", "orco", "demonio" ){
+        console.log("nada") 
+        break
+    }
+}
