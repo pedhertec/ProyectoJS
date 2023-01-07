@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="spanish">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,74 @@
     <title>Entrega Javascript</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <p class="contenedor">
-        <h1>Segunda entrega Javascript</h1>
-    </p>
+    <header>
+        <div class="logoBar">
+            <button id="login">
+                Iniciar Sesión
+            </button>
+            <button id="logout">
+                Cerrar Sesión
+            </button>
+        </div>
+    </header>
+    <div id="containerLogin">
+        <h3>
+            Iniciar sesión
+        </h3>
+        <form id="formLogin">
+            <label>
+                <input type="text" placeholder="Usuario" id="user">
+            </label>
+            <label>
+                <input type="text" placeholder="Contraseña" id="senia">
+            </label>
+            <label>
+                <input type="submit" value="Aceptar">
+            </label>
+        </form>
+    </div>
+    <div id="containerWelcome">
+        <h1>Bienvenido a la tercera entrega de Javascript</h1>
+    </div>
+    <div id="containerTitle">
+        <h2>Funcionarios de alta</h2>
+    </div>
 
-<!-- ******************************************************************* -->
-<!--     Elige un ejercicio para ver, quedaron prontos el uno y el tres -->
-<!-- ******************************************************************* -->
-<!DOCTYPE html>
-<html lang="spanish">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrega Javascript</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <p class="contenedor">
-        <h1>Segunda entrega Javascript</h1>
-    </p>
 
-<!-- ******************************************************************* -->
-<!--     Elige un ejercicio para ver, quedaron prontos el uno y el tres -->
-<!-- ******************************************************************* -->
-
-<!--     <script src="./js/index.js"> </script> -->
-<!--     <script src="./js/ejerciciodos.js"> </script> -->
-<!--     <script src="./js/ejerciciotres.js"> </script> -->
-<!--     <script src="./js/ejercicio2.js"></script> -->
-    <script src="./js/productos.js"></script>
-    <script src="./js/segundaentrega.js"> </script>
+    <div id="containerUsuarios">
+        <form id="agregarUser">
+            <label>
+                <input type="text" placeholder="Nombre" id="inputNombre">
+            </label>
+            <label>
+                <input type="text" placeholder="Cargo" id="inputCargo">
+            </label>
+            <label>
+                <input type="number" placeholder="Edad" id="inputEdad">
+            </label>
+            <label>
+                <input type="submit" value="Dar de Alta">
+            </label>
+        </form>
+    </div>
+    <div id="containerCards">
+    <!--<div class="card" >
+            <h4>Pedro</h4>
+            <p>Dueño</p>
+            <p>Tiene 36 años</p> -->
+    </div>
+    <!-- ******************************************************************* -->
+    <!--     Elige un ejercicio para ver, quedaron prontos el uno y el tres -->
+    <!-- ******************************************************************* -->
+    <!--     <script src="./js/index.js"> </script> -->
+    <!--     <script src="./js/ejerciciodos.js"> </script> -->
+    <!--     <script src="./js/ejerciciotres.js"> </script> -->
+    <!--     <script src="./js/ejercicio2.js"></script> -->
+    <!--     <script src="./js/productos.js"></script>-->
+    <!--     <script src="./js/segundaentrega.js"> </script> -->
+    <script src="./js/terceraentrega.js"></script>
 </body>
+
 </html>

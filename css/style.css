@@ -6,9 +6,46 @@
     box-sizing: border-box;
 }
 
+
+.logoBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    height: 40px;
+}
+
+#login{
+    margin-right: 20px;
+}
+
+#logout{
+    margin-right: 20px;
+    display: none;
+}
+
 .contenedor{
     display: flex;
     margin-top: 40px;
+}
+
+#containerLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px 20px 0px 0px;
+    display: none;
+}
+
+#formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formLogin label{
+    margin: 5px;
 }
 
 h1{
@@ -18,4 +55,44 @@ h1{
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 250px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px 20px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2{
+    margin-top: 30px;
+    background: #c8fcfc;
+    background: linear-gradient(to right, #c8fcfc 0%, #25cf9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#containerTitle{
+    display: none;
+}
+
+#containerUsuarios{
+    display: flex;
+    justify-content: center;
+}
+
+#containerCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: none;
 }
