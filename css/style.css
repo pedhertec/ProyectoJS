@@ -90,9 +90,19 @@ h2{
     justify-content: center;
 }
 
+#containerBuscador{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 #containerCards{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     display: none;
+}
+
+#containerBuscador label{
+    margin: 5px;
 }

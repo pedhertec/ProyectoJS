@@ -87,6 +87,8 @@ cerrarLogin.onclick = ( valor ) => {
 
 let funcionarios = []
 
+
+//Evento sobre el click para agregar funcionario
 document.querySelector("#agregarUser").onsubmit = (e) => {
     e.preventDefault()
     funcionarios.push({
@@ -95,7 +97,8 @@ document.querySelector("#agregarUser").onsubmit = (e) => {
         edad: document.querySelector("#inputEdad").value
     })
     infoParaStorage("funcionarios", funcionarios)
-        // validarSesion(infoDesdeStorage("funcionarios"))
+    // validarSesion(infoDesdeStorage("funcionarios"))
+    subirFuncionarios(bajarFuncionarios)
 }
 
 //Acá creo la nueva card cada vez que se ingresa un funcionario
@@ -112,7 +115,6 @@ const subirFuncionarios = ( array ) => {
             <p>
                 "Tiene ${elemento.edad} años"
             </p>
-            <button id="botonBaja">Dar de Baja</button>
             </div>
         `
     }, "")
@@ -120,14 +122,10 @@ const subirFuncionarios = ( array ) => {
 }
 
 
-let bajarFuncionarios = infoDesdeStorage("funcionarios")
-funcionarios = bajarFuncionarios
-subirFuncionarios(bajarFuncionarios)
 
+let bajarFuncionarios = infoDesdeStorage("funcionarios")
+funcionarios = bajarFuncionarios 
+subirFuncionarios(bajarFuncionarios)
 
 //Para ir controlando el array
 console.log(bajarFuncionarios)
-
-
-
-
