@@ -87,7 +87,6 @@ cerrarLogin.onclick = ( valor ) => {
 
 let funcionarios = []
 
-
 //Evento sobre el click para agregar funcionario
 document.querySelector("#agregarUser").onsubmit = (e) => {
     e.preventDefault()
@@ -124,7 +123,7 @@ const subirFuncionarios = ( array ) => {
 
 
 let bajarFuncionarios = infoDesdeStorage("funcionarios")
-funcionarios = bajarFuncionarios 
+funcionarios = bajarFuncionarios || []
 subirFuncionarios(bajarFuncionarios)
 
 //Para ir controlando el array
